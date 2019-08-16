@@ -131,5 +131,73 @@ echo "The value of the variable name is $name"
 
 ![image](https://user-images.githubusercontent.com/44743158/63159143-6ebb9700-c038-11e9-94df-0c38192ad3b3.png)
 
+
+## Working with SCM (Github) - First Job
+
+> All the demos for jenkins with SCM is kept at https://github.com/hub-kubernetes/jenkinscode. We will use this repository to perform all subsequent demos related to SCM. 
+
+> For this demo we will work with a small parameterized shell script - https://github.com/hub-kubernetes/jenkinscode/blob/master/number.sh. This script adds two numbers and takes it from the parameters.
+
+* Go to the folder **MyFirstFolder** and create a new freestyle job with the name **scmdemo**
+
+* In the **General** section check **Discard Old Builds** to always get a fresh build
+
+![image](https://user-images.githubusercontent.com/44743158/63160825-59e10280-c03c-11e9-8a94-7a6848d90092.png)
+
+* In the **General** Section check **This project is parameterized**
+
+* **Add Parameter** -> **String Parameter** 
+
+* **Name**: **num1** and **Default Value**: **10**
+
+* Add a new Parameter
+
+* **Name**: **num2** and **Default Value**: **5**
+
+![image](https://user-images.githubusercontent.com/44743158/63160451-6f096180-c03b-11e9-947b-5ad09e7c152c.png)
+
+* In **Source Code Management** section select **Git**
+
+* Enter the **URL** as **https://github.com/hub-kubernetes/jenkinscode**
+
+* **Credentials** are set as **None** because this is a public repository
+
+* **Branches to build** will be set as **master**
+
+![image](https://user-images.githubusercontent.com/44743158/63160613-ce677180-c03b-11e9-91e6-44a3a45818c1.png)
+
+* Keep **Build Triggers** and **Build Environment** as default 
+
+* In the **Build** step, select **Add Build** and **Execute Shell**
+
+* Enter the commands as below - 
+
+~~~
+chmod +x ./number.sh
+./number.sh
+~~~
+
+![image](https://user-images.githubusercontent.com/44743158/63160736-230aec80-c03c-11e9-8496-80bb2bbb5945.png)
+
+* Click **Save** 
+
+* On the Left Panel click **Build with Parameters**
+
+![image](https://user-images.githubusercontent.com/44743158/63160955-9dd40780-c03c-11e9-9d65-bf1d45897e1a.png)
+
+* Feel free to change the numeric values for num1 and num2 parameters
+
+* Click **Build** 
+
+* Check the Build History and **Console Output** 
+
+![image](https://user-images.githubusercontent.com/44743158/63161218-281c6b80-c03d-11e9-9939-e91af57f451e.png)
+
+
+
+
+
+
+
  
 
