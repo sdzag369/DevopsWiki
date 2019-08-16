@@ -74,3 +74,62 @@ echo "This folder is inside the workspace on slave node at location $(pwd)"
 
 ![image](https://user-images.githubusercontent.com/44743158/63158112-2f8c4680-c036-11e9-80b4-0c528bc5f895.png)
 
+
+## Create a parameterized job
+
+* Go back to the folder **myFirstFolder**
+
+* On the left panel select **New Item** 
+
+* Enter the **name** as **ParameterizedJob** and select **Freestyle Project** 
+
+* Click **OK**
+
+![image](https://user-images.githubusercontent.com/44743158/63158455-e8528580-c036-11e9-8a2c-497b4c040a14.png)
+
+* In the **General** section check **This project is parameterized** 
+
+* **Add Parameter** -> **String Parameter** 
+
+* Give variable name as **name**
+
+* Give Default Value as **defaultName** 
+
+![image](https://user-images.githubusercontent.com/44743158/63158583-2f407b00-c037-11e9-8a8c-0f6bb6549e5a.png)
+
+* Keep **Source Code Management**, **Build Triggers** and **Build Environment** intact
+
+* **Build** -> **Add Build Step** -> **Execute Shell** 
+
+![image](https://user-images.githubusercontent.com/44743158/63158676-69118180-c037-11e9-86b9-9375b921f0b5.png)
+
+* Provide the below **command** 
+
+```
+echo "The value of the variable name is $name" 
+```
+
+![image](https://user-images.githubusercontent.com/44743158/63158774-a4ac4b80-c037-11e9-8cd7-004eebd4762d.png)
+
+* Add a new post Build Step 
+
+* Select **Add Post Build Action** and select **Delete workspace when build is done**
+
+![image](https://user-images.githubusercontent.com/44743158/63158912-edfc9b00-c037-11e9-96de-bb5911d708b7.png)
+
+* Click **Save** 
+
+* On the left Panel select **Build with Parameters** 
+
+![image](https://user-images.githubusercontent.com/44743158/63159039-3916ae00-c038-11e9-9812-a607270fb363.png)
+
+* You may keep the default parameter or change the parameter 
+
+* Click **Build** 
+
+* Check the **Build History** and then **Console Output** 
+
+![image](https://user-images.githubusercontent.com/44743158/63159143-6ebb9700-c038-11e9-94df-0c38192ad3b3.png)
+
+ 
+
