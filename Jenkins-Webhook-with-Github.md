@@ -81,20 +81,20 @@
 
 * Ensure successful connection 
 
-* Check *Manage Hooks* 
+* Check **Manage Hooks** 
 
 * Click **Save** 
 
 ![image](https://user-images.githubusercontent.com/44743158/63163995-a03a5f80-c044-11e9-8cf5-3bcaf3dd5848.png)
 
 
-> Github now has a webhook set up with Jenkins. In order to test the functionality, we will use an existing job, **scmdemo** in our folder **MyFirstFolder**. 
+> Github now has a webhook set up with Jenkins. In order to test the functionality, we will use an existing job, **scmdemo** in our folder **MyFirstFolder**
 
-* In Jenkins go inside your folder *MyFirstFolder* 
+* In Jenkins go inside your folder **MyFirstFolder** 
 
-* Click on the Job *scmdemo* 
+* Click on the Job **scmdemo** 
 
-* On the left Panel select *configure* 
+* On the left Panel select **configure**
 
 * The configure option let you edit the previous configurations 
 
