@@ -1,3 +1,0 @@
-Welcome to the jenkins-cicd wiki!
-![image](https://user-images.githubusercontent.com/44743158/63156368-2c8f5700-c032-11e9-8414-6b2bc784dfaf.png)
-
