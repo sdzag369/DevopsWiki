@@ -15,6 +15,9 @@
 ![image](https://user-images.githubusercontent.com/44743158/63157019-a96f0080-c033-11e9-9e2e-9387c0b981e7.png)
 
 
+***
+
+
 ## Create your First Job/Project inside **MyFirstFolder** folder
 
 > You should be inside the folder. You can verify the current folder as below - 
@@ -31,6 +34,9 @@
 
 ![image](https://user-images.githubusercontent.com/44743158/63157367-682b2080-c034-11e9-8f8f-61924359a3b4.png)
 
+
+
+***
 
 ## Configure your first Jenkins Job
 
@@ -74,6 +80,8 @@ echo "This folder is inside the workspace on slave node at location $(pwd)"
 
 ![image](https://user-images.githubusercontent.com/44743158/63158112-2f8c4680-c036-11e9-80b4-0c528bc5f895.png)
 
+
+***
 
 ## Create a parameterized job
 
@@ -131,6 +139,8 @@ echo "The value of the variable name is $name"
 
 ![image](https://user-images.githubusercontent.com/44743158/63159143-6ebb9700-c038-11e9-94df-0c38192ad3b3.png)
 
+
+***
 
 ## Working with SCM (Github) - First Job
 
