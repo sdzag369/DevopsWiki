@@ -94,6 +94,8 @@ npm i rxjs-compat
 
 npm install
 
+npm run build
+
 ```
 
 ![image](https://user-images.githubusercontent.com/44743158/63500159-fa28a280-c4e6-11e9-9e15-ad8153753578.png)
