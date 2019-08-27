@@ -86,7 +86,7 @@ sed -i "s/SPRING_PORT/${spring_port}/g" user.service.ts
 
 #Go back to Build directory to execute npm install
 
-cd ../../../../
+cd ../../../
 
 # Install angular Build
 
