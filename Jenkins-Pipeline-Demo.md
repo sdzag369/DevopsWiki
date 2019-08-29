@@ -10,7 +10,8 @@ General Section
 * Description - Job to compile spring backend
 * Check Discard old builds 
 * check GitHub project - https://github.com/hub-kubernetes/jenkins-cicd/
-* Check Restrict where this project can be run - slave1
+* check repository url: take git hub clone url.
+* Check Restrict where this project can be run - slave1(name of your slave)
 
 SCM section 
 
